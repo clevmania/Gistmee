@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+<item
+    android:id="@+id/action_add_image"
+    android:title="Add Image"
+    android:icon="@drawable/ic_attach_file_white_24dp"
+    app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_send_post"
+        android:title="send Post"
+        android:icon="@drawable/ic_send_white_24dp"
+        app:showAsAction="always"/>
+</menu>

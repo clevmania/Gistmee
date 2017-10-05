@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_blog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:elevation="4dp"
+        app:cardCornerRadius="3dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_title_and_desc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_blog_thumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                />
+
+            <TextView
+                android:id="@+id/tv_blog_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_blog_thumbnail"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                tools:text="Blog title for cardview"
+                android:textColor="#4c4c4c"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/tv_blog_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_blog_title"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="4dp"
+                android:layout_marginBottom="4dp"
+                tools:text="Description: you can find extra details here"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textSize="8sp"/>
+
+            <TextView
+                android:layout_below="@id/tv_blog_description"
+                android:id="@+id/tv_blog_card_time"
+                android:textStyle="bold"
+                android:text="time:"
+                android:layout_marginBottom="2dp"
+                android:visibility="gone"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_blog_card_post_content"
+                android:textStyle="italic"
+                android:layout_below="@+id/tv_blog_card_time"
+                tools:text="content"
+                android:visibility="gone"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_below="@+id/tv_blog_description"
+                android:id="@+id/tv_blog_card_post_date"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"
+                tools:text="25, sept 2017"
+                android:visibility="gone"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+</LinearLayout>

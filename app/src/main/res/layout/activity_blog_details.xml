@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:padding="16dp"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context="com.eclev.lawrence.gistmee.BlogDetailsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_blog_detail_image"
+                android:src="@drawable/cover"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_blog_post"
+                    android:textStyle="bold"
+                    android:text="posted by:"
+                    android:layout_marginBottom="2dp"
+                    android:layout_alignParentTop="true"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_blog_post_author"
+                    android:textStyle="italic"
+                    android:layout_below="@+id/tv_blog_post"
+                    tools:text="admin"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_blog_post_date"
+                    android:textStyle="bold"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tv_blog_post"
+                    tools:text="25, sept 2017"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_blog_post_time"
+                    android:textStyle="bold"
+                    android:layout_alignParentRight="true"
+                    android:layout_above="@+id/tv_blog_post_date"
+                    tools:text="9:45 pm"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+            <TextView
+                tools:text="Title goes here"
+                android:layout_marginTop="8dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:id="@+id/blog_detail_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                tools:text="short description goes here"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:id="@+id/blog_detail_description"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                tools:text="Content goes here"
+                android:id="@+id/blog_detail_content"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

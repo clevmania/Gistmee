@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="32dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.eclev.lawrence.gistmee.LoginActivity">
+
+    <TextView
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="Gistmee"
+        android:textColor="@color/colorPrimary"
+        android:textSize="32sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:id="@+id/iv_logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@mipmap/ic_logo"/>
+
+    <TextView
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="SignIn With Google"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.gms.common.SignInButton
+        android:padding="4dp"
+        android:id="@+id/btn_google"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.google.android.gms.common.SignInButton>
+
+    <TextView
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="Admins Only"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <View
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+
+    <EditText
+        android:id="@+id/et_user_login_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:ems="10"
+        android:padding="8dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/et_user_login_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:padding="8dp"
+        android:hint="Password"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:inputType="textPassword"/>
+
+
+    <Button
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textColor="#fff"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/btn_login"
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Start Blogging"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:fontFamily="casual"
+            android:textSize="15sp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:text="Don't have an account? "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_signUp"
+            android:fontFamily="monospace"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textStyle="bold"
+            android:text="SignUp"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
